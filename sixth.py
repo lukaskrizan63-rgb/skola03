@@ -1,7 +1,6 @@
 import sys
 import requests
 
-
 def download_url_and_get_all_hrefs(url):
     hrefs = []
 
@@ -42,7 +41,6 @@ def download_url_and_get_all_hrefs(url):
         raise Exception(f"Chyba pri stahovani stranky: {response.status_code}")
 
     return hrefs
-
 
 if __name__ == "__main__":
     try:
